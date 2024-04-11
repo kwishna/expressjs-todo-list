@@ -45,8 +45,6 @@ To use the API, you need to obtain an access token by authenticating with your u
 
 ### Example Usage
 
-#### Signup
-
 <pre>
       1. POST /auth/signup - Sign up for a new account.
          Example request body:
