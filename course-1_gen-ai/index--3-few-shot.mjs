@@ -21,12 +21,12 @@ let messages = [
     }
 ]
 
-const response = await openai.chat.completions.create({
-    model: 'gpt-3.5-turbo',
-    messages: messages,
-})
+// const response = await openai.chat.completions.create({
+//     model: 'gpt-3.5-turbo',
+//     messages: messages,
+// })
 
-console.log(response.choices[0].message.content)
+// console.log(response.choices[0].message.content)
 
 // ------------------------------------------FEW SHOT-----------------------------------------------------------
 
