@@ -91,7 +91,7 @@ router.get('/', (req, res) => {
     </body>
     </html>
   `;
-  res.send(instructions);
+  res.status(200).send(instructions);
   });
 
   
