@@ -27,11 +27,15 @@ app.use(compression());
 // app.use(bodyParser.json())
 
 // CORS Middleware
-app.use(function(req, res, next) {
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  // res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
-  next();
+/**
+* Middleware to set CORS headers on all requests.
+* Allows any origin to access the API and sets the Content-Type header.
+*/
+app.use(function (req, res, next) {
+res.setHeader('Access-Control-Allow-Origin', '*');
+// res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+next();
 });
 
 // Routes
